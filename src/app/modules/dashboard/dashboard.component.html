@@ -1,0 +1,31 @@
+<div>
+    <app-widget-area [data]="bigChart"></app-widget-area>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-card">
+    <mat-card fxFlex="25">
+        <app-widget-card label="Referrals" total="18k" percentage="50%" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="New Users" total="5k" percentage="10%" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="Users Retension" total="15k" percentage="40%" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="Users Engagement" total="12k" percentage="28%" [data]="cards"></app-widget-card>
+    </mat-card>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="60">
+        <app-widget-table [data]="table"></app-widget-table>
+    </div>
+    <div fxFlex="40">
+        <app-widget-pie [data]="pie"></app-widget-pie>
+    </div>
+</div>
